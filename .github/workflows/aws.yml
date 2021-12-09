@@ -36,7 +36,7 @@ env:
   ECR_REPOSITORY: libpostal-rest           # set this to your Amazon ECR repository name
   ECS_SERVICE: libpostal-rest                 # set this to your Amazon ECS service name
   ECS_CLUSTER: libpostal-rest
-  ECS_TASK_DEFINITION:libpostal-rest # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: libpostal-rest # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: libpostal-rest           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
