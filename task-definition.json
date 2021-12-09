@@ -1,0 +1,35 @@
+{
+    "containerDefinitions": [
+        {
+            "command": [],
+            "entryPoint": [],
+            "essential": true,
+            "image": "458642107250.dkr.ecr.us-east-1.amazonaws.com/dev-libpostal-rest:latest",
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/dev/libpostal-rest/",
+                    "awslogs-region": "us-east-1"
+                }
+            },
+            "name": "dev-libpostal-rest",
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 8080,
+                    "protocol": "tcp"
+                }
+            ]
+        }
+    ],
+    "cpu": "1024",
+    "executionRoleArn": "arn:aws:iam::458642107250:role/libpostal-rest-TaskExecutionRole",
+    "taskRoleArn": "arn:aws:iam::458642107250:role/libpostal-rest-TaskRole",
+    "family": "libpostal-rest",
+    "memory": "2048",
+    "networkMode": "awsvpc",
+    "platformFamily": "LINUX",
+    "requiresCompatibilities": [
+        "FARGATE"
+    ]
+}
