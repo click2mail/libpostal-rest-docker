@@ -50,8 +50,8 @@ jobs:
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 
     - name: Download task definition
-          run: |
-            aws --profile c2m --region us-east-1 ecs describe-task-definition --task-definition libpostal-rest --query taskDefinition > task-definition.json
+      run: |
+        aws --profile c2m --region us-east-1 ecs describe-task-definition --task-definition libpostal-rest --query taskDefinition > task-definition.json
 
     - name: Fill in the new image ID in the Amazon ECS task definition
       id: task-def
