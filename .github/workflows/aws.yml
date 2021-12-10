@@ -7,7 +7,7 @@ on:
 
 env:
   AWS_REGION: us-east-1
-  ECR_REPOSITORY: dev-libpostal-rest
+  ECR_REPOSITORY: libpostal-rest
   ECS_SERVICE: dev-libpostal-rest
   ECS_CLUSTER: dev-libpostal-rest
   # ECS_TASK_DEFINITION: libpostal-rest.json # set this to the path to your Amazon ECS task definition
