@@ -10,8 +10,8 @@ WORKDIR /
 RUN git clone https://github.com/openvenues/libpostal
 WORKDIR /libpostal
 RUN git checkout $COMMIT
-COPY ./libpostal.sh .
-RUN ./libpostal.sh
+COPY ./build_libpostal.sh .
+RUN ./build_libpostal.sh
 
 COPY ./libpostal_rest.sh .
 RUN ./libpostal_rest.sh
