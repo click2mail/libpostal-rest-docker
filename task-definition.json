@@ -23,8 +23,8 @@
         }
     ],
     "cpu": "1024",
-    "executionRoleArn": "arn:aws:iam::458642107250:role/libpostal-rest-TaskExecutionRole",
-    "taskRoleArn": "arn:aws:iam::458642107250:role/libpostal-rest-TaskRole",
+    "executionRoleArn": "libpostal-rest-TaskExecutionRole",
+    "taskRoleArn": "libpostal-rest-TaskRole",
     "family": "libpostal-rest",
     "memory": "2048",
     "networkMode": "awsvpc",
