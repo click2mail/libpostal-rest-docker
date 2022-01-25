@@ -13,8 +13,8 @@ RUN git checkout $COMMIT
 COPY ./build_libpostal.sh .
 RUN ./build_libpostal.sh
 
-COPY ./libpostal_rest.sh .
-RUN ./libpostal_rest.sh
+COPY ./build_libpostal_rest.sh .
+RUN ./build_libpostal_rest.sh
 
 EXPOSE 8080
 
